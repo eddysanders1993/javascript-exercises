@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<body>
+<script>
+function getSum() {
+
+var sum = 0;
+var args = [];
+for (var i = 0; i < arguments.length; i++) {
+  args[i] = arguments[i];
+}
+for(var i = 0; i < args.length; i++) {
+  sum = sum + args[i];
+}
+console.log(sum);
+}
+
+function getProduct() {
+
+
+var args = [];
+for (var i = 0; i < arguments.length; i++) {
+  args[i] = arguments[i];
+}
+function reduceArr(total, num) {
+  return total * num;
+}
+console.log(args.reduce(reduceArr));
+}
+
+function getDividend() {
+
+
+var args = [];
+for (var i = 0; i < arguments.length; i++) {
+  args[i] = arguments[i];
+}
+function reduceArr(total, num) {
+  return total / num;
+}
+console.log(args.reduce(reduceArr));
+}
+</script>
+</body>
